@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400;700;900&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.2.0/fonts/remixicon.css" rel="stylesheet">
+    <link href="./assets/css/style.css" rel="stylesheet">
+    <link href="./assets/css/signin.css" rel="stylesheet">
+    <link href="./assets/css/signup.css" rel="stylesheet">
+    <title>Sign Up</title>
+</head>
+<body>
+    <section class="sign">
+        <div class="sign-container">
+            <h1>Sign Up</h1>
+
+            <div class="signup-links">
+                <a href="#"><i class="ri-google-fill"></i> Continue with Google</a>
+                <a href="#"><i class="ri-facebook-circle-fill"></i> Continue with Facebook</a>
+            </div>
+
+            <div class="seperation">
+                <div><span>OR</span></div>
+            </div>
+            <form class="sign-form">
+                <div class="mail-section">
+                    <input type="text" name="mail" autocomplete="off" required/>
+                    <label for="mail" class="label-mail">
+                        <span class="content-mail">Email address</span>
+                    </label>
+                </div>
+                <div class="password-section">
+                    <input type="password" name="password" autocomplete="off" required/>
+                    <label for="password" class="label-password">
+                        <span class="content-password">Password</span>
+                    </label>
+                </div>
+                <p>* shall include 0-9 a-z A-Z in 4 to 10 characters</p>
+                <div class="password2-section">
+                    <input type="password" name="password2" autocomplete="off" required/>
+                    <label for="password2" class="label-password2">
+                        <span class="content-password2">Password Confirmation</span>
+                    </label>
+                </div>
+                <button class="sign-btn"><span>Create Account</span></button>
+                <p>Already have an account? Please<a href="./signin.html">Sign In</a></p>
+            </form>
+        </div>
+    </section>
+
+    <footer class="site-footer">
+        <div class="footer-container">
+            <div class="footer-icon">
+                <h2>
+                    <span>Little</span> Fashion
+                </h2>
+                <p>Copyright © 2022 <strong>Little Fashion</strong></p>
+                <p>Designed by Tooplate</p>
+            </div>
+            <div class="footer-sitemap">
+                <h2>Sitemap</h2>
+                <ul class="footer-list">
+                    <li><a href="#">Story</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">Products</a></li>
+                    <li><a href="#">FAQs</a></li>
+                </ul>
+            </div>
+            <div class="footer-socials">
+                <h2>Social</h2>
+                <div class="social-links">
+                    <a href="#"><i class="ri-instagram-line"></i></a>
+                    <a href="#"><i class="ri-whatsapp-line"></i></a>
+                    <a href="#"><i class="ri-youtube-fill"></i></a>
+                    <a href="#"><i class="ri-skype-fill"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="./assets/js/signup.js"></script>
+</body>
+</html>

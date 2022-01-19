@@ -1,0 +1,182 @@
+:root {
+  --white-color: #ffffff;
+  --primary-color: #ff4400;
+  --section-bg-color: #f0f8ff;
+  --dark-color: #000000;
+  --grey-color: #d0d1d1;
+  --p-color: #717275;
+  --body-font-family: "Inter", sans-serif;
+  --h5-font-size: 24px;
+  --p-font-size: 20px;
+  --copyright-text-font-size: 16px;
+  --product-link-font-size: 14px;
+  --custom-link-font-size: 12px;
+  --font-weight-thin: 100;
+  --font-weight-light: 300;
+  --font-weight-normal: 400;
+  --font-weight-bold: 700;
+  --font-weight-black: 900;
+}
+
+.sign {
+  padding: 7rem 0;
+}
+
+.sign-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+  width: 37%;
+}
+
+.sign-container h1 {
+  font-size: 64px;
+  font-weight: var(--font-weight-black);
+  margin-bottom: 3rem;
+}
+
+.sign-form {
+  display: flex;
+  flex-direction: column;
+  row-gap: 0.5rem;
+  width: 100%;
+}
+
+.mail-section {
+  width: 100%;
+  position: relative;
+  height: 60px;
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+
+.password-section {
+  width: 100%;
+  position: relative;
+  height: 60px;
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+
+.mail-section input {
+  width: 100%;
+  height: 100%;
+  color: var(--dark-color);
+  padding-top: 13px;
+  padding-left: 6px;
+  font-size: 16px;
+  font-weight: var(--font-weight-normal);
+  letter-spacing: 0.5px;
+  outline: none;
+  border: 1px solid var(--grey-color);
+  border-radius: 5px;
+}
+
+.password-section input {
+  width: 100%;
+  height: 100%;
+  color: var(--dark-color);
+  padding-top: 13px;
+  padding-left: 6px;
+  font-size: 20px;
+  letter-spacing: 2px;
+  outline: none;
+  border: 1px solid var(--grey-color);
+  border-radius: 5px;
+}
+
+.mail-section label {
+  position: absolute;
+  bottom: 5px;
+  left: 0%;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+
+.content-mail {
+  position: absolute;
+  bottom: 14px;
+  left: 10px;
+  color: var(--grey-color);
+  transition: all 0.2s ease;
+}
+
+.mail-section input:focus {
+  border: 3px solid rgba(160, 219, 255, 0.589);
+}
+
+.mail-section input:focus + .label-mail .content-mail,
+.mail-section input:valid + .label-mail .content-mail {
+  transform: translateY(-80%);
+  font-size: 12px;
+}
+
+.password-section label {
+  position: absolute;
+  bottom: 5px;
+  left: 0%;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+
+.content-password {
+  position: absolute;
+  bottom: 14px;
+  left: 10px;
+  color: var(--grey-color);
+  transition: all 0.2s ease;
+}
+
+.password-section input:focus {
+  border: 3px solid rgba(160, 219, 255, 0.589);
+}
+
+.password-section input:focus + .label-password .content-password,
+.password-section input:valid + .label-password .content-password {
+  transform: translateY(-80%);
+  font-size: 12px;
+}
+
+.sign-btn {
+  width: 100%;
+  height: 60px;
+  background-color: var(--dark-color);
+  margin-bottom: 1rem;
+  border: none;
+  border-radius: 30px;
+  color: var(--white-color);
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.sign-btn span {
+  font-size: 16px;
+  text-transform: uppercase;
+  font-weight: var(--font-weight-normal);
+}
+
+.sign-btn:hover {
+  background-color: var(--primary-color);
+}
+
+.sign-form p {
+  font-size: var(--p-font-size);
+  color: var(--p-color);
+  font-weight: var(--font-weight-normal);
+  display: flex;
+  justify-content: center;
+}
+
+.sign-form p a {
+  padding-left: 5px;
+  text-decoration: none;
+  color: var(--p-color);
+  transition: all 0.3s ease;
+}
+
+.sign-form p a:hover {
+  color: var(--primary-color);
+}

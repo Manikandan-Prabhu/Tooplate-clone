@@ -1,0 +1,177 @@
+:root {
+  --white-color: #ffffff;
+  --primary-color: #ff4400;
+  --section-bg-color: #f0f8ff;
+  --dark-color: #000000;
+  --grey-color: #d0d1d1;
+  --p-color: #717275;
+  --body-font-family: "Inter", sans-serif;
+  --h5-font-size: 24px;
+  --p-font-size: 20px;
+  --copyright-text-font-size: 16px;
+  --product-link-font-size: 14px;
+  --custom-link-font-size: 12px;
+  --font-weight-thin: 100;
+  --font-weight-light: 300;
+  --font-weight-normal: 400;
+  --font-weight-bold: 700;
+  --font-weight-black: 900;
+}
+
+.team-section {
+  background: var(--grey-color);
+  padding: 7rem 0;
+}
+
+.team-container {
+  margin: 0 8rem;
+}
+
+.heading {
+  font-size: 40px;
+  font-weight: var(--font-weight-black);
+  margin-bottom: 3rem;
+}
+
+.heading span {
+  color: var(--primary-color);
+}
+
+.team-grid {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 1.5rem;
+}
+
+.grid {
+  background: var(--white-color);
+  display: flex;
+  position: relative;
+  align-items: center;
+  padding: 2.7rem 2rem;
+  border-radius: 5px;
+}
+
+.grid img {
+  width: 85px;
+  height: 85px;
+  border-radius: 100px;
+}
+
+.member-details {
+  width: 100%;
+  padding-left: 20px;
+}
+
+.member-details h5 {
+  font-size: 24px;
+}
+
+.member-details strong {
+  color: var(--p-color);
+}
+
+.add {
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  margin: auto 32px;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  border: none;
+  background: var(--grey-color);
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.add span {
+  width: 15px;
+  height: 15px;
+  background: var(--white-color);
+  display: flex;
+  border-radius: 50%;
+  margin: 0 auto;
+  align-items: center;
+  justify-content: center;
+  color: var(--grey-color);
+  transition: all 0.4s ease;
+}
+
+.add:hover span {
+  background: var(--dark-color);
+}
+
+.feedback {
+  overflow-y: hidden;
+  width: 100%;
+  height: 100%;
+  padding: 7rem 0;
+}
+
+.feedback-container {
+  margin: 0 17rem;
+  justify-content: center;
+  /*overflow: hidden;*/
+}
+
+.feedback-container h1 {
+  font-size: 40px;
+  font-weight: var(--font-weight-black);
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.feedback-container h1 span {
+  color: var(--primary-color);
+}
+
+.scroll-track {
+  height: 100%;
+  width: 400%;
+  display: flex;
+  overflow: hidden;
+}
+
+.quotes {
+  position: relative;
+}
+.scroll-content {
+  width: 100%;
+  padding: 5rem 7rem;
+}
+
+.scroll-content p {
+  font-size: 24px;
+  color: var(--p-color);
+  font-weight: var(--font-weight-thin);
+  margin-bottom: 1.75rem;
+}
+
+.person-info {
+  display: flex;
+  align-items: center;
+}
+.person-info img {
+  width: 60px;
+  height: 60px;
+  border-radius: 100px;
+  margin-right: 1.5rem;
+}
+
+.person-info span strong {
+  color: var(--p-color);
+}
+
+.scroll-content::before {
+  content: "\201C";
+  font-size: 100px;
+  display: inline-block;
+  height: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: var(--primary-color);
+  font-family: cursive;
+}

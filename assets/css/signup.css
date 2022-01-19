@@ -1,0 +1,129 @@
+:root {
+  --white-color: #ffffff;
+  --primary-color: #ff4400;
+  --section-bg-color: #f0f8ff;
+  --dark-color: #000000;
+  --grey-color: #d0d1d1;
+  --p-color: #717275;
+  --body-font-family: "Inter", sans-serif;
+  --h5-font-size: 24px;
+  --p-font-size: 20px;
+  --copyright-text-font-size: 16px;
+  --product-link-font-size: 14px;
+  --custom-link-font-size: 12px;
+  --font-weight-thin: 100;
+  --font-weight-light: 300;
+  --font-weight-normal: 400;
+  --font-weight-bold: 700;
+  --font-weight-black: 900;
+}
+
+.sign-container h1 {
+  margin-bottom: 2rem !important;
+}
+.signup-links {
+  display: flex;
+  flex-direction: column;
+  width: 75%;
+  margin-bottom: 1.5rem;
+}
+
+.signup-links a {
+  text-decoration: none;
+  text-align: center;
+  width: 100%;
+  height: 60px;
+  margin-bottom: 22px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--grey-color);
+  background: transparent;
+  border-radius: 30px;
+  color: var(--dark-color);
+  transition: all 0.3s ease;
+}
+
+.signup-links a i {
+  margin-right: 20px;
+  font-size: 20px;
+}
+
+.signup-links a:hover {
+  color: var(--white-color);
+  background: var(--primary-color);
+}
+
+.seperation {
+  width: 75%;
+  height: 20px;
+  margin-bottom: 2rem;
+}
+
+.seperation div {
+  width: 100%;
+  height: 1px;
+  background-color: var(--grey-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.seperation div span {
+  background: var(--white-color);
+  padding: 7px;
+  font-size: 14px;
+  font-weight: var(--font-weight-bold);
+}
+
+.password-section {
+  margin-bottom: 0px !important;
+}
+
+.password2-section {
+  width: 100%;
+  position: relative;
+  height: 60px;
+  overflow: hidden;
+  margin: 20px 0;
+}
+
+.password2-section input {
+  width: 100%;
+  height: 100%;
+  color: var(--dark-color);
+  padding-top: 13px;
+  padding-left: 6px;
+  font-size: 20px;
+  letter-spacing: 2px;
+  outline: none;
+  border: 1px solid var(--grey-color);
+  border-radius: 5px;
+}
+
+.password2-section label {
+  position: absolute;
+  bottom: 5px;
+  left: 0%;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+
+.content-password2 {
+  position: absolute;
+  bottom: 14px;
+  left: 10px;
+  color: var(--grey-color);
+  transition: all 0.2s ease;
+}
+
+.password2-section input:focus {
+  border: 3px solid rgba(160, 219, 255, 0.589);
+}
+
+.password2-section input:focus + .label-password2 .content-password2,
+.password2-section input:valid + .label-password2 .content-password2 {
+  transform: translateY(-80%);
+  font-size: 12px;
+}
