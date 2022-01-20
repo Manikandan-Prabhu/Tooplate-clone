@@ -25,6 +25,7 @@
 }
 
 .site-header {
+  margin-top: 12vh;
   height: 70vh;
   width: 100%;
   overflow: hidden;

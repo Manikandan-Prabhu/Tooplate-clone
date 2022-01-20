@@ -24,6 +24,7 @@
 }
 
 .site-header {
+  margin-top: 12vh;
   height: 55vh;
   background-color: var(--section-bg-color);
   display: flex;
